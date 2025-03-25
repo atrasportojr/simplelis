@@ -1196,4 +1196,8 @@ Public Class frmtemplateRTF
         Me.radiologistdesignation = Utility.NullToEmptyString(dt.Rows(0).Item("designation"))
         Me.radiologistlicenseno = Utility.NullToEmptyString(dt.Rows(0).Item("prcno"))
     End Sub
+
+    Private Sub lblward_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblward.Click
+
+    End Sub
 End Class

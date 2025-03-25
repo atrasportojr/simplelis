@@ -45,7 +45,7 @@ Public Class frmMain
         End With
         laboratoryid = 1
         requestdetailno = 61014 '1628 maceda '1156 maceda '1569 cabebe '1572 PERPETUA '1575 Martinez '1582 Nobleza
-        employeeid = 1081 'ecomed@lab 1031 'ecomed@rad 1011 'lhi@lab 1693 'lhi@rad 1361 'hipol@lab 1081
+        employeeid = 1361 'ecomed@lab 1031 'ecomed@rad 1011 'lhi@lab 1693 'lhi@rad 1361 'hipol@lab 1081 'lhirad 1361
         myformaction = enformstatus.edit
         target = targetmodule.LISDashboard
         modGlobal.userid = employeeid

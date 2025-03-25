@@ -137,6 +137,9 @@ Partial Class frmtemplateRTF
         Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtcaseno = New System.Windows.Forms.TextBox()
+        Me.LineShape4 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.tbResult.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.tbllayoutpanel.SuspendLayout()
@@ -175,8 +178,8 @@ Partial Class frmtemplateRTF
         'tbResult
         '
         Me.tbResult.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.tbResult.Controls.Add(Me.TabPage1)
         Me.tbResult.Controls.Add(Me.TabPage2)
         Me.tbResult.Controls.Add(Me.TabPage3)
@@ -797,9 +800,9 @@ Partial Class frmtemplateRTF
         Me.txtPatientname.BackColor = System.Drawing.Color.Transparent
         Me.txtPatientname.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Bold)
         Me.txtPatientname.ForeColor = System.Drawing.Color.Black
-        Me.txtPatientname.Location = New System.Drawing.Point(67, 14)
+        Me.txtPatientname.Location = New System.Drawing.Point(61, 14)
         Me.txtPatientname.Name = "txtPatientname"
-        Me.txtPatientname.Size = New System.Drawing.Size(434, 18)
+        Me.txtPatientname.Size = New System.Drawing.Size(323, 18)
         Me.txtPatientname.TabIndex = 259
         Me.txtPatientname.Text = "NAME"
         Me.txtPatientname.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -810,7 +813,7 @@ Partial Class frmtemplateRTF
         Me.lblPatientname.BackColor = System.Drawing.Color.Transparent
         Me.lblPatientname.Font = New System.Drawing.Font("Calibri", 11.25!)
         Me.lblPatientname.ForeColor = System.Drawing.Color.Black
-        Me.lblPatientname.Location = New System.Drawing.Point(12, 15)
+        Me.lblPatientname.Location = New System.Drawing.Point(12, 14)
         Me.lblPatientname.Name = "lblPatientname"
         Me.lblPatientname.Size = New System.Drawing.Size(49, 18)
         Me.lblPatientname.TabIndex = 258
@@ -821,9 +824,9 @@ Partial Class frmtemplateRTF
         Me.txtGender.BackColor = System.Drawing.Color.Transparent
         Me.txtGender.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Bold)
         Me.txtGender.ForeColor = System.Drawing.Color.Black
-        Me.txtGender.Location = New System.Drawing.Point(686, 14)
+        Me.txtGender.Location = New System.Drawing.Point(535, 14)
         Me.txtGender.Name = "txtGender"
-        Me.txtGender.Size = New System.Drawing.Size(67, 18)
+        Me.txtGender.Size = New System.Drawing.Size(61, 18)
         Me.txtGender.TabIndex = 265
         Me.txtGender.Text = "Female"
         Me.txtGender.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -833,9 +836,9 @@ Partial Class frmtemplateRTF
         Me.txtAge.BackColor = System.Drawing.Color.Transparent
         Me.txtAge.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Bold)
         Me.txtAge.ForeColor = System.Drawing.Color.Black
-        Me.txtAge.Location = New System.Drawing.Point(571, 14)
+        Me.txtAge.Location = New System.Drawing.Point(431, 14)
         Me.txtAge.Name = "txtAge"
-        Me.txtAge.Size = New System.Drawing.Size(63, 18)
+        Me.txtAge.Size = New System.Drawing.Size(46, 18)
         Me.txtAge.TabIndex = 264
         Me.txtAge.Text = "Age"
         Me.txtAge.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -846,7 +849,7 @@ Partial Class frmtemplateRTF
         Me.lblGender.BackColor = System.Drawing.Color.Transparent
         Me.lblGender.Font = New System.Drawing.Font("Calibri", 11.25!)
         Me.lblGender.ForeColor = System.Drawing.Color.Black
-        Me.lblGender.Location = New System.Drawing.Point(649, 15)
+        Me.lblGender.Location = New System.Drawing.Point(499, 14)
         Me.lblGender.Name = "lblGender"
         Me.lblGender.Size = New System.Drawing.Size(34, 18)
         Me.lblGender.TabIndex = 262
@@ -858,7 +861,7 @@ Partial Class frmtemplateRTF
         Me.lblAge.BackColor = System.Drawing.Color.Transparent
         Me.lblAge.Font = New System.Drawing.Font("Calibri", 11.25!)
         Me.lblAge.ForeColor = System.Drawing.Color.Black
-        Me.lblAge.Location = New System.Drawing.Point(532, 15)
+        Me.lblAge.Location = New System.Drawing.Point(396, 14)
         Me.lblAge.Name = "lblAge"
         Me.lblAge.Size = New System.Drawing.Size(36, 18)
         Me.lblAge.TabIndex = 261
@@ -889,16 +892,16 @@ Partial Class frmtemplateRTF
         'LineShape3
         '
         Me.LineShape3.Name = "LineShape3"
-        Me.LineShape3.X1 = 684
-        Me.LineShape3.X2 = 751
-        Me.LineShape3.Y1 = 32
-        Me.LineShape3.Y2 = 32
+        Me.LineShape3.X1 = 528
+        Me.LineShape3.X2 = 595
+        Me.LineShape3.Y1 = 33
+        Me.LineShape3.Y2 = 33
         '
         'LineShape2
         '
         Me.LineShape2.Name = "LineShape2"
-        Me.LineShape2.X1 = 570
-        Me.LineShape2.X2 = 632
+        Me.LineShape2.X1 = 430
+        Me.LineShape2.X2 = 483
         Me.LineShape2.Y1 = 32
         Me.LineShape2.Y2 = 32
         '
@@ -906,7 +909,7 @@ Partial Class frmtemplateRTF
         '
         Me.LineShape1.Name = "LineShape1"
         Me.LineShape1.X1 = 61
-        Me.LineShape1.X2 = 503
+        Me.LineShape1.X2 = 394
         Me.LineShape1.Y1 = 32
         Me.LineShape1.Y2 = 32
         '
@@ -915,7 +918,7 @@ Partial Class frmtemplateRTF
         Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
-        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape1, Me.LineShape2, Me.LineShape3})
+        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape4, Me.LineShape1, Me.LineShape2, Me.LineShape3})
         Me.ShapeContainer1.Size = New System.Drawing.Size(1138, 611)
         Me.ShapeContainer1.TabIndex = 271
         Me.ShapeContainer1.TabStop = False
@@ -967,8 +970,8 @@ Partial Class frmtemplateRTF
         'cmbpreviousresult
         '
         Me.cmbpreviousresult.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.cmbpreviousresult.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbpreviousresult.Font = New System.Drawing.Font("Calibri", 11.25!)
         Me.cmbpreviousresult.FormattingEnabled = True
@@ -980,8 +983,8 @@ Partial Class frmtemplateRTF
         'Label2
         '
         Me.Label2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Calibri", 11.25!)
         Me.Label2.ForeColor = System.Drawing.Color.Black
@@ -1018,9 +1021,9 @@ Partial Class frmtemplateRTF
         Me.lblrequestedby.BackColor = System.Drawing.Color.Transparent
         Me.lblrequestedby.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Bold)
         Me.lblrequestedby.ForeColor = System.Drawing.Color.Black
-        Me.lblrequestedby.Location = New System.Drawing.Point(851, 15)
+        Me.lblrequestedby.Location = New System.Drawing.Point(706, 15)
         Me.lblrequestedby.Name = "lblrequestedby"
-        Me.lblrequestedby.Size = New System.Drawing.Size(280, 18)
+        Me.lblrequestedby.Size = New System.Drawing.Size(244, 18)
         Me.lblrequestedby.TabIndex = 284
         Me.lblrequestedby.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -1029,7 +1032,7 @@ Partial Class frmtemplateRTF
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Calibri", 11.25!)
         Me.Label6.ForeColor = System.Drawing.Color.Black
-        Me.Label6.Location = New System.Drawing.Point(754, 15)
+        Me.Label6.Location = New System.Drawing.Point(607, 14)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(97, 18)
         Me.Label6.TabIndex = 283
@@ -1210,6 +1213,34 @@ Partial Class frmtemplateRTF
         Me.DataGridViewTextBoxColumn11.ReadOnly = True
         Me.DataGridViewTextBoxColumn11.Width = 132
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.White
+        Me.Label5.Font = New System.Drawing.Font("Calibri", 11.25!)
+        Me.Label5.ForeColor = System.Drawing.Color.Black
+        Me.Label5.Location = New System.Drawing.Point(981, 14)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(51, 18)
+        Me.Label5.TabIndex = 287
+        Me.Label5.Text = "Case #:"
+        '
+        'txtcaseno
+        '
+        Me.txtcaseno.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtcaseno.Location = New System.Drawing.Point(1037, 12)
+        Me.txtcaseno.Name = "txtcaseno"
+        Me.txtcaseno.Size = New System.Drawing.Size(100, 14)
+        Me.txtcaseno.TabIndex = 288
+        '
+        'LineShape4
+        '
+        Me.LineShape4.Name = "LineShape4"
+        Me.LineShape4.X1 = 1034
+        Me.LineShape4.X2 = 1138
+        Me.LineShape4.Y1 = 34
+        Me.LineShape4.Y2 = 34
+        '
         'frmtemplateRTF
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1217,6 +1248,8 @@ Partial Class frmtemplateRTF
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1138, 611)
         Me.ControlBox = False
+        Me.Controls.Add(Me.txtcaseno)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.txtward)
         Me.Controls.Add(Me.lblward)
         Me.Controls.Add(Me.lblrequestedby)
@@ -1379,4 +1412,7 @@ Partial Class frmtemplateRTF
     Friend WithEvents chkesig As System.Windows.Forms.CheckBox
     Friend WithEvents lblward As System.Windows.Forms.Label
     Friend WithEvents txtward As System.Windows.Forms.Label
+    Friend WithEvents LineShape4 As Microsoft.VisualBasic.PowerPacks.LineShape
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents txtcaseno As System.Windows.Forms.TextBox
 End Class
