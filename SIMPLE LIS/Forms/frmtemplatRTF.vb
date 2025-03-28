@@ -262,6 +262,7 @@ Public Class frmtemplateRTF
         Me.dtDate.Enabled = False
         Me.cmbRadTech.Enabled = False
         Me.cmbradiologist.Enabled = False
+        Me.txtcaseno.Enabled = False
         Me.paneleditortools.Visible = False
     End Sub
     Public Function moveImage(ByVal sourcePath As String, ByVal imageName As String, ByVal isdelete As Boolean) As String
