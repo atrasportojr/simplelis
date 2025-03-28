@@ -22,6 +22,7 @@
     Dim mesigmedtech As Boolean
     Dim mesigverifiedby As Boolean
     Dim mesigpatho As Boolean
+    Public caseno As Long
 #End Region
 #Region "Properties"
     Public Property Oldlaboratoryid() As Long
@@ -234,9 +235,9 @@
             operation = 2
         End If
         Dim strPar() As String = {"@operation", "@soperation", "@Oldlaboratoryid", "@laboratoryid", "@itemcode", "@admissionid", "@patientrequestno", "@specimen", "@labno", "@datesubmitted", "@dateencoded", _
-                                  "@encodedby", "@pathologist", "@medicaltechnologist", "@medtech", "@verifiedby", "@releasedby", "@datereleased", "@remarks", "esigmedtech", "esigverifiedby", "esigpatho", "NewPK"}
+                                  "@encodedby", "@pathologist", "@medicaltechnologist", "@medtech", "@verifiedby", "@releasedby", "@datereleased", "@remarks", "esigmedtech", "esigverifiedby", "esigpatho", "@caseno", "NewPK"}
         Dim strVal() As Object = {operation, soperation, Me.Oldlaboratoryid, Me.laboratoryid, Me.itemcode, Me.admissionid, Me.patientrequestno, Me.specimen, Me.labno, Me.datesubmitted, Me.dateencoded, _
-                                    Me.encodedby, Me.pathologist, Me.medicaltechnologist, Me.medtech, Me.verifiedby, Me.releasedby, Me.datereleased, Me.remarks, esigmedtech, esigverifiedby, esigpatho, 1}
+                                    Me.encodedby, Me.pathologist, Me.medicaltechnologist, Me.medtech, Me.verifiedby, Me.releasedby, Me.datereleased, Me.remarks, esigmedtech, esigverifiedby, esigpatho, caseno, 1}
         Return GenericDA.ManageQuery(strPar, strVal, "spLaboratoryResult", 2)
     End Function
     Public Shared Sub mergeResult(requestdetailno As Long, oldlabresultid As Long, newlabresultid As Long)

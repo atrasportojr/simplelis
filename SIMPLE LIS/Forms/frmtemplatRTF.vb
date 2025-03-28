@@ -35,7 +35,7 @@ Public Class frmtemplateRTF
     Private laboratoryresultid As Long
     Private chargeid As Long
     Public patient As New Patient
-    Private ptno As String
+    Private ptno, caseno As String
     Private radiologistdesignation As String
     Private radiologistlicenseno As String
     Private requestStatus As Integer
@@ -348,9 +348,12 @@ Public Class frmtemplateRTF
             Me.dtDate.Value = Utility.NullToCurrentDate(dtResult.Rows(0).Item("dateencoded"))
             Me.chkesig.Checked = Utility.NullToBoolean(dtResult.Rows(0).Item("esigradiologist"))
             Me.txtward.Text = Utility.NullToEmptyString(dtResult.Rows(0).Item("ward"))
+            caseno = Utility.NullToEmptyString(dtResult.Rows(0).Item("caseno"))
+            Me.txtcaseno.Text = caseno
             If modGlobal.hospitalcode = Constant.Facility.ecomed Then
                 Me.lblward.Visible = False
                 Me.txtward.Visible = False
+                Me.txtcaseno.Visible = False
             End If
 
             Dim dtResultImages As DataTable = clsRadiology.getRadiologyResultDetailsImages(requestdetailno, 4)
@@ -480,6 +483,7 @@ Public Class frmtemplateRTF
             .releasedby = 1
             .datereleased = GetServerDate() '"01/01/1990"
             .pathologist = Me.cmbradiologist.SelectedValue
+            .caseno = Me.txtcaseno.Text
             If Me.laboratoryresultid = 0 Then
                 .Save(True)
                 Call SaveLog("Radiology", "New Radiology result:" & .patientrequestno, userid)
@@ -714,7 +718,7 @@ Public Class frmtemplateRTF
                                 Case "lblpatientaddress"
                                     field.Result = Me.patient.homeaddress
                                 Case "lblptno"
-                                    field.Result = Me.ptno
+                                    field.Result = Me.caseno  '--Me.ptno 
                                 Case "lblhospno"
                                     field.Result = Me.patient.hospitalno
                                 Case "lblward"
@@ -751,7 +755,7 @@ Public Class frmtemplateRTF
                                 Case "lblpatientaddress"
                                     field.Range.Text = Me.patient.homeaddress
                                 Case "lblptno"
-                                    field.Result = Me.ptno
+                                    field.Result = Me.caseno 'Me.ptno
                                 Case "lblchiefcomplaint"
                                     field.Range.Text = Me.lblchiefcomplaint.Text
                                 Case "lblage"
@@ -877,6 +881,12 @@ Public Class frmtemplateRTF
             With r.Find
                 .Text = "{patientno}"
                 .Replacement.Text = Me.ptno
+                .Wrap = Microsoft.Office.Interop.Word.WdFindWrap.wdFindContinue
+                .Execute(Replace:=Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll)
+            End With
+            With r.Find
+                .Text = "{caseno}"
+                .Replacement.Text = Me.caseno '--Me.ptno
                 .Wrap = Microsoft.Office.Interop.Word.WdFindWrap.wdFindContinue
                 .Execute(Replace:=Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll)
             End With

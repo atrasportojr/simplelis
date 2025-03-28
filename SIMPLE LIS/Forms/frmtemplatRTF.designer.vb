@@ -105,6 +105,7 @@ Partial Class frmtemplateRTF
         Me.LineShape2 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
+        Me.LineShape4 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.lblexamination = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -118,6 +119,8 @@ Partial Class frmtemplateRTF
         Me.chkesig = New System.Windows.Forms.CheckBox()
         Me.lblward = New System.Windows.Forms.Label()
         Me.txtward = New System.Windows.Forms.Label()
+        Me.lblcaseno = New System.Windows.Forms.Label()
+        Me.txtcaseno = New System.Windows.Forms.TextBox()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -137,9 +140,6 @@ Partial Class frmtemplateRTF
         Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.txtcaseno = New System.Windows.Forms.TextBox()
-        Me.LineShape4 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.tbResult.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.tbllayoutpanel.SuspendLayout()
@@ -923,6 +923,14 @@ Partial Class frmtemplateRTF
         Me.ShapeContainer1.TabIndex = 271
         Me.ShapeContainer1.TabStop = False
         '
+        'LineShape4
+        '
+        Me.LineShape4.Name = "LineShape4"
+        Me.LineShape4.X1 = 1034
+        Me.LineShape4.X2 = 1138
+        Me.LineShape4.Y1 = 34
+        Me.LineShape4.Y2 = 34
+        '
         'lblexamination
         '
         Me.lblexamination.BackColor = System.Drawing.Color.Transparent
@@ -1074,6 +1082,26 @@ Partial Class frmtemplateRTF
         Me.txtward.TabIndex = 286
         Me.txtward.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'lblcaseno
+        '
+        Me.lblcaseno.AutoSize = True
+        Me.lblcaseno.BackColor = System.Drawing.Color.White
+        Me.lblcaseno.Font = New System.Drawing.Font("Calibri", 11.25!)
+        Me.lblcaseno.ForeColor = System.Drawing.Color.Black
+        Me.lblcaseno.Location = New System.Drawing.Point(981, 14)
+        Me.lblcaseno.Name = "lblcaseno"
+        Me.lblcaseno.Size = New System.Drawing.Size(51, 18)
+        Me.lblcaseno.TabIndex = 287
+        Me.lblcaseno.Text = "Case #:"
+        '
+        'txtcaseno
+        '
+        Me.txtcaseno.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtcaseno.Location = New System.Drawing.Point(1037, 18)
+        Me.txtcaseno.Name = "txtcaseno"
+        Me.txtcaseno.Size = New System.Drawing.Size(100, 14)
+        Me.txtcaseno.TabIndex = 288
+        '
         'DataGridViewTextBoxColumn1
         '
         Me.DataGridViewTextBoxColumn1.HeaderText = "old location..."
@@ -1213,34 +1241,6 @@ Partial Class frmtemplateRTF
         Me.DataGridViewTextBoxColumn11.ReadOnly = True
         Me.DataGridViewTextBoxColumn11.Width = 132
         '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.White
-        Me.Label5.Font = New System.Drawing.Font("Calibri", 11.25!)
-        Me.Label5.ForeColor = System.Drawing.Color.Black
-        Me.Label5.Location = New System.Drawing.Point(981, 14)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(51, 18)
-        Me.Label5.TabIndex = 287
-        Me.Label5.Text = "Case #:"
-        '
-        'txtcaseno
-        '
-        Me.txtcaseno.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtcaseno.Location = New System.Drawing.Point(1037, 12)
-        Me.txtcaseno.Name = "txtcaseno"
-        Me.txtcaseno.Size = New System.Drawing.Size(100, 14)
-        Me.txtcaseno.TabIndex = 288
-        '
-        'LineShape4
-        '
-        Me.LineShape4.Name = "LineShape4"
-        Me.LineShape4.X1 = 1034
-        Me.LineShape4.X2 = 1138
-        Me.LineShape4.Y1 = 34
-        Me.LineShape4.Y2 = 34
-        '
         'frmtemplateRTF
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1249,7 +1249,7 @@ Partial Class frmtemplateRTF
         Me.ClientSize = New System.Drawing.Size(1138, 611)
         Me.ControlBox = False
         Me.Controls.Add(Me.txtcaseno)
-        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.lblcaseno)
         Me.Controls.Add(Me.txtward)
         Me.Controls.Add(Me.lblward)
         Me.Controls.Add(Me.lblrequestedby)
@@ -1413,6 +1413,6 @@ Partial Class frmtemplateRTF
     Friend WithEvents lblward As System.Windows.Forms.Label
     Friend WithEvents txtward As System.Windows.Forms.Label
     Friend WithEvents LineShape4 As Microsoft.VisualBasic.PowerPacks.LineShape
-    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents lblcaseno As System.Windows.Forms.Label
     Friend WithEvents txtcaseno As System.Windows.Forms.TextBox
 End Class
