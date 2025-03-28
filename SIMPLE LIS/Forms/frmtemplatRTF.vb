@@ -263,6 +263,7 @@ Public Class frmtemplateRTF
         Me.cmbRadTech.Enabled = False
         Me.cmbradiologist.Enabled = False
         Me.txtcaseno.Enabled = False
+        Me.txtcaseno.BackColor = Color.White
         Me.paneleditortools.Visible = False
     End Sub
     Public Function moveImage(ByVal sourcePath As String, ByVal imageName As String, ByVal isdelete As Boolean) As String
@@ -719,7 +720,7 @@ Public Class frmtemplateRTF
                                 Case "lblpatientaddress"
                                     field.Result = Me.patient.homeaddress
                                 Case "lblptno"
-                                    field.Result = Me.caseno  '--Me.ptno 
+                                    field.Result = Me.txtcaseno.Text  '--Me.ptno 
                                 Case "lblhospno"
                                     field.Result = Me.patient.hospitalno
                                 Case "lblward"
@@ -756,7 +757,7 @@ Public Class frmtemplateRTF
                                 Case "lblpatientaddress"
                                     field.Range.Text = Me.patient.homeaddress
                                 Case "lblptno"
-                                    field.Result = Me.caseno 'Me.ptno
+                                    field.Result = Me.txtcaseno.Text 'Me.ptno
                                 Case "lblchiefcomplaint"
                                     field.Range.Text = Me.lblchiefcomplaint.Text
                                 Case "lblage"
@@ -887,7 +888,7 @@ Public Class frmtemplateRTF
             End With
             With r.Find
                 .Text = "{caseno}"
-                .Replacement.Text = Me.caseno '--Me.ptno
+                .Replacement.Text = Me.txtcaseno.Text '--Me.ptno
                 .Wrap = Microsoft.Office.Interop.Word.WdFindWrap.wdFindContinue
                 .Execute(Replace:=Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll)
             End With
