@@ -9,5 +9,6 @@
         Public Const lhi As String = "20627"
         Public Const hipolfamily As String = "10"
         Public Const ecomed As String = "Z10138"
+        Public Const qualilabdiag As String = "5MQUALILAB"
     End Class
 End Class

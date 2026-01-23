@@ -117,25 +117,25 @@ Partial Class frmResultDesigner
         'DefaultPDFViewerToolStripMenuItem
         '
         Me.DefaultPDFViewerToolStripMenuItem.Name = "DefaultPDFViewerToolStripMenuItem"
-        Me.DefaultPDFViewerToolStripMenuItem.Size = New System.Drawing.Size(256, 22)
+        Me.DefaultPDFViewerToolStripMenuItem.Size = New System.Drawing.Size(255, 22)
         Me.DefaultPDFViewerToolStripMenuItem.Text = "Default PDF Viewer"
         '
         'CrystalReportToolStripMenuItem
         '
         Me.CrystalReportToolStripMenuItem.Name = "CrystalReportToolStripMenuItem"
-        Me.CrystalReportToolStripMenuItem.Size = New System.Drawing.Size(256, 22)
+        Me.CrystalReportToolStripMenuItem.Size = New System.Drawing.Size(255, 22)
         Me.CrystalReportToolStripMenuItem.Text = "Crystal Report"
         '
         'ExportAsEmailAttachmentToolStripMenuItem
         '
         Me.ExportAsEmailAttachmentToolStripMenuItem.Name = "ExportAsEmailAttachmentToolStripMenuItem"
-        Me.ExportAsEmailAttachmentToolStripMenuItem.Size = New System.Drawing.Size(256, 22)
+        Me.ExportAsEmailAttachmentToolStripMenuItem.Size = New System.Drawing.Size(255, 22)
         Me.ExportAsEmailAttachmentToolStripMenuItem.Text = "Export as Email Attachment (Lock)"
         '
         'ExportAsPDFToolStripMenuItem
         '
         Me.ExportAsPDFToolStripMenuItem.Name = "ExportAsPDFToolStripMenuItem"
-        Me.ExportAsPDFToolStripMenuItem.Size = New System.Drawing.Size(256, 22)
+        Me.ExportAsPDFToolStripMenuItem.Size = New System.Drawing.Size(255, 22)
         Me.ExportAsPDFToolStripMenuItem.Text = "Export as PDF"
         '
         'tsMerging
@@ -173,7 +173,7 @@ Partial Class frmResultDesigner
         Me.tsradtemplatemain.Image = Global.SIMPLE_LIS.My.Resources.Resources.ic_template
         Me.tsradtemplatemain.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsradtemplatemain.Name = "tsradtemplatemain"
-        Me.tsradtemplatemain.Size = New System.Drawing.Size(73, 35)
+        Me.tsradtemplatemain.Size = New System.Drawing.Size(74, 35)
         Me.tsradtemplatemain.Text = "Templates"
         Me.tsradtemplatemain.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.tsradtemplatemain.Visible = False
@@ -205,8 +205,8 @@ Partial Class frmResultDesigner
         Me.dgvResult.AllowUserToAddRows = False
         Me.dgvResult.AllowUserToDeleteRows = False
         Me.dgvResult.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvResult.BackgroundColor = System.Drawing.Color.White
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.White

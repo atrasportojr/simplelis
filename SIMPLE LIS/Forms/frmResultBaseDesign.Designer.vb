@@ -179,12 +179,12 @@ Partial Class frmResultBaseDesign
         '
         'lblMisc
         '
-        Me.lblMisc.BackColor = System.Drawing.Color.Transparent
+        Me.lblMisc.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.lblMisc.Font = New System.Drawing.Font("Cambria", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblMisc.ForeColor = System.Drawing.Color.Black
-        Me.lblMisc.Location = New System.Drawing.Point(161, 154)
+        Me.lblMisc.Location = New System.Drawing.Point(36, 155)
         Me.lblMisc.Name = "lblMisc"
-        Me.lblMisc.Size = New System.Drawing.Size(443, 20)
+        Me.lblMisc.Size = New System.Drawing.Size(711, 20)
         Me.lblMisc.TabIndex = 127
         Me.lblMisc.Text = "HEMATOLOGY"
         Me.lblMisc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -340,7 +340,7 @@ Partial Class frmResultBaseDesign
         'Label13
         '
         Me.Label13.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label13.AutoSize = True
         Me.Label13.BackColor = System.Drawing.Color.Transparent
         Me.Label13.Font = New System.Drawing.Font("Calibri", 11.25!)
@@ -390,7 +390,7 @@ Partial Class frmResultBaseDesign
         'lblverifiedby
         '
         Me.lblverifiedby.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblverifiedby.BackColor = System.Drawing.Color.Transparent
         Me.lblverifiedby.Font = New System.Drawing.Font("Calibri", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle))
         Me.lblverifiedby.ForeColor = System.Drawing.Color.Black
@@ -444,7 +444,7 @@ Partial Class frmResultBaseDesign
         'Label12
         '
         Me.Label12.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label12.AutoSize = True
         Me.Label12.BackColor = System.Drawing.Color.Transparent
         Me.Label12.Font = New System.Drawing.Font("Calibri", 11.25!)
@@ -482,7 +482,7 @@ Partial Class frmResultBaseDesign
         'lblmedtech
         '
         Me.lblmedtech.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblmedtech.BackColor = System.Drawing.Color.Transparent
         Me.lblmedtech.Font = New System.Drawing.Font("Calibri", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle))
         Me.lblmedtech.ForeColor = System.Drawing.Color.Black
@@ -596,7 +596,7 @@ Partial Class frmResultBaseDesign
         'lblpatho
         '
         Me.lblpatho.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblpatho.BackColor = System.Drawing.Color.Transparent
         Me.lblpatho.Font = New System.Drawing.Font("Calibri", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle))
         Me.lblpatho.ForeColor = System.Drawing.Color.Black

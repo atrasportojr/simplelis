@@ -63,6 +63,8 @@ Public Class frmResultBaseDesign
 
         initForm()
         Me.lblMisc.Text = Me.getLabname
+        
+
         If Me.laboratoryid = LabFormat.ECGREPORT Then
             Me.lblpathodesignation.Text = "Cardiologist"
         ElseIf Me.laboratoryid = LabFormat.NEWBORNSCREENING Then
@@ -75,6 +77,7 @@ Public Class frmResultBaseDesign
 #End Region
 
 #Region "Methods"
+     
     Private Function getLabname() As String
         If Me.labname = "" Then
             Return "Laboratory"
@@ -101,6 +104,19 @@ Public Class frmResultBaseDesign
             lbltimeencoded.Text = "Room:"
             txttimeencoded.Location = New Point(620, 135)
             txttimeencoded.Size = New Size(127, 18)
+        ElseIf modGlobal.hospitalcode = Constant.Facility.qualilabdiag Then             '1/23/2026 jay
+            Select Case Me.getLabname
+                Case "HEMATOLOGY"
+                    lblMisc.BackColor = Color.Pink
+                Case "URINALYSIS"
+                    lblMisc.BackColor = Color.Yellow
+                Case "FECALYSIS"
+                    lblMisc.BackColor = Color.LightBlue
+                Case "BLOOD CHEMISTRY"
+                    lblMisc.BackColor = Color.Green
+                Case "MISCELLANEOUS FORM"
+                    lblMisc.BackColor = Color.Gray
+            End Select
         End If
 
         Me.paneltopmargin.Visible = appSetting.labheadermargin > 0
@@ -194,18 +210,25 @@ Public Class frmResultBaseDesign
         Me.cmbverifiedby.ValueMember = "employeeid"
         Me.cmbverifiedby.SelectedIndex = -1
         afterload = True
-        If verifiedby > 0 Then
-            Me.cmbverifiedby.SelectedValue = verifiedby
-        ElseIf Me.cmbverifiedby.Items.Count > 0 Then
-            Me.cmbverifiedby.SelectedValue = modGlobal.userid
+        If modGlobal.hospitalcode = Constant.Facility.qualilabdiag Then         '1/23/2026 jay
+            If verifiedby > 0 Then
+                Me.cmbverifiedby.SelectedValue = verifiedby
+            End If
+        Else
+            If verifiedby > 0 Then
+                Me.cmbverifiedby.SelectedValue = verifiedby
+            ElseIf Me.cmbverifiedby.Items.Count > 0 Then
+                Me.cmbverifiedby.SelectedValue = modGlobal.userid
+            End If
         End If
+        
         If Not isLock Then
             FormatSignatory(signatory.medtech, True, Utility.getReference(Constant.ReferenceKey.lab_showmedtech_sig) = 1)
             FormatSignatory(signatory.verifiedby, Utility.getReference(Constant.ReferenceKey.lab_showverifiedby) = 1, Utility.getReference(Constant.ReferenceKey.lab_showverifiedby_sig) = 1)
             FormatSignatory(signatory.patho, True, Utility.getReference(Constant.ReferenceKey.lab_showpatho_sig) = 1)
         End If
     End Sub
-    Private Sub checkHighlight(ctrl As Control, dgcell As DataGridViewCell, texthighlight As String)
+    Private Sub checkHighlight(ByVal ctrl As Control, ByVal dgcell As DataGridViewCell, ByVal texthighlight As String)
         If texthighlight = "" Then
             Exit Sub
         End If
@@ -261,7 +284,7 @@ Public Class frmResultBaseDesign
             End Try
         Next
     End Sub
-    Private Function processCondition(value As String, condition As String) As Boolean
+    Private Function processCondition(ByVal value As String, ByVal condition As String) As Boolean
         Try
             value = value.Replace("%", "")
             If condition.Contains(">") Then
@@ -296,7 +319,7 @@ Public Class frmResultBaseDesign
         End Try
         Return False
     End Function
-    Public Sub AddControl(ctr As clsModel.LabControl)
+    Public Sub AddControl(ByVal ctr As clsModel.LabControl)
         Dim panel As New Panel()
         If Not isformedit AndAlso ctr.defaultvalue <> "" AndAlso dtPatientDetails.Columns.Contains(ctr.defaultvalue) Then
             ctr.value = Me.dtPatientDetails.Rows(0).Item(ctr.defaultvalue).ToString
@@ -646,11 +669,11 @@ Public Class frmResultBaseDesign
             Dim rezi2 As ResizeableControl = New ResizeableControl(panel)
         End If
     End Sub
-    Private Sub panel_MouseDoubleClick(sender As System.Object, e As System.Windows.Forms.MouseEventArgs)
+    Private Sub panel_MouseDoubleClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs)
         Dim panel As Control = CType(sender, Control)
         Me.baseForm.onPanelDoubleClick(panel.Name.Replace("panel_", ""), panel.Location.X, panel.Location.Y, panel.Width, panel.Height)
     End Sub
-    Private Sub label_MouseDoubleClick(sender As System.Object, e As System.Windows.Forms.MouseEventArgs)
+    Private Sub label_MouseDoubleClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs)
         Dim panel As Control = CType(sender, Control).Parent
         Me.baseForm.onPanelDoubleClick(panel.Name.Replace("panel_", ""), panel.Location.X, panel.Location.Y, panel.Width, panel.Height)
     End Sub
