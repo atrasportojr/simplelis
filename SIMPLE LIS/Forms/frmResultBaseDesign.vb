@@ -89,6 +89,7 @@ Public Class frmResultBaseDesign
         Me.lblHeader.Text = dtHospitalInfo.Rows(0).Item("Hospital").ToString()
         Me.lblAddress.Text = dtHospitalInfo.Rows(0).Item("Address3").ToString()
         Me.lablTelNo.Text = dtHospitalInfo.Rows(0).Item("Telephone").ToString()
+        Me.lblMisc.BackColor = SystemColors.Control
         If modGlobal.hospitalcode = Constant.Facility.lhi Then
             lbldateencoded.Text = "Date:"
             txtdateencoded.Location = New Point(616, 114)
@@ -97,6 +98,21 @@ Public Class frmResultBaseDesign
             txttimeencoded.Location = New Point(620, 135)
             txttimeencoded.Size = New Size(127, 18)
             paneltimeinfo.Visible = False
+            If Me.laboratoryid = 40 And Me.txtgridremarks.Text = "" Then
+                txtgridremarks.Text = "   REFERENCE RANGE		" & vbNewLine & _
+                                             "      PREGNANT WOMEN	        TOTAL ß-hCG Level" & vbNewLine & _
+                                                 "      Weeks since LMP	                          (mIU/mL)" & vbNewLine & _
+                                                 "      NEGATIVE		        < 5.00" & vbNewLine & _
+                                                 "      3			        5-50" & vbNewLine & _
+                                                 "      4			        5-426" & vbNewLine & _
+                                                 "      5			        18-7,340" & vbNewLine & _
+                                                 "      6			        1,080-56,500" & vbNewLine & _
+                                                 "      7 to 8			        7,650-229,000" & vbNewLine & _
+                                                 "      9 to 12			        25,700-288,000" & vbNewLine & _
+                                                 "      13 to 16		        13,300-254,000" & vbNewLine & _
+                                                 "      17 to 24		        4,060-164,400" & vbNewLine & _
+                                                 "      25 to 40		        3,640-117,000"
+            End If
         ElseIf modGlobal.hospitalcode = Constant.Facility.hipolfamily Then
             lbldateencoded.Text = "Date:"
             txtdateencoded.Location = New Point(616, 114)
@@ -117,6 +133,7 @@ Public Class frmResultBaseDesign
                 Case "MISCELLANEOUS FORM"
                     lblMisc.BackColor = Color.Gray
             End Select
+
         End If
 
         Me.paneltopmargin.Visible = appSetting.labheadermargin > 0
@@ -997,5 +1014,10 @@ Public Class frmResultBaseDesign
 
             End Try
         End If
+    End Sub
+
+    Private Sub txtgridremarks_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtgridremarks.TextChanged
+        Dim size As Size = TextRenderer.MeasureText(txtgridremarks.Text, txtgridremarks.Font)
+        txtgridremarks.Height = size.Height + 10
     End Sub
 End Class

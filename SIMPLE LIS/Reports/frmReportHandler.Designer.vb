@@ -54,5 +54,5 @@ Partial Class frmReportHandler
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents crvPrinting As CrystalDecisions.Windows.Forms.CrystalReportViewer
+    Friend WithEvents crvPrinting As CrystalDecisions.Windows.Forms.CrystalReportViewer 
 End Class

@@ -22,22 +22,22 @@ Partial Class frmResultBaseDesign
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle113 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle121 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle114 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle115 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle116 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle117 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle118 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle119 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle120 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle122 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle123 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle124 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle125 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle126 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle127 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle128 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.lblMisc = New System.Windows.Forms.Label()
         Me.cmbMedtech = New System.Windows.Forms.ComboBox()
         Me.lblpatientid = New System.Windows.Forms.Label()
@@ -73,7 +73,6 @@ Partial Class frmResultBaseDesign
         Me.panelpatho = New System.Windows.Forms.Panel()
         Me.chkesigpatho = New System.Windows.Forms.CheckBox()
         Me.lblpatho = New System.Windows.Forms.Label()
-        Me.panelresult = New System.Windows.Forms.Panel()
         Me.panelresultgrid = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.txtgridremarks = New System.Windows.Forms.TextBox()
@@ -100,6 +99,7 @@ Partial Class frmResultBaseDesign
         Me.Label20 = New System.Windows.Forms.Label()
         Me.panelmanageparams = New System.Windows.Forms.Panel()
         Me.btnEdit = New System.Windows.Forms.Button()
+        Me.panelresult = New System.Windows.Forms.Panel()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.LineShape6 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.LineShape10 = New Microsoft.VisualBasic.PowerPacks.LineShape()
@@ -142,6 +142,9 @@ Partial Class frmResultBaseDesign
         Me.pctrLogo = New System.Windows.Forms.PictureBox()
         Me.cmverifiedby = New System.Windows.Forms.ComboBox()
         Me.paneltimeinfo = New System.Windows.Forms.Panel()
+        Me.panelheader = New System.Windows.Forms.Panel()
+        Me.panelbody = New System.Windows.Forms.Panel()
+        Me.paneltopmargin = New System.Windows.Forms.Panel()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -153,9 +156,6 @@ Partial Class frmResultBaseDesign
         Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.panelheader = New System.Windows.Forms.Panel()
-        Me.panelbody = New System.Windows.Forms.Panel()
-        Me.paneltopmargin = New System.Windows.Forms.Panel()
         Me.panelmain.SuspendLayout()
         Me.panelsignatory.SuspendLayout()
         Me.tblpanelsignatory.SuspendLayout()
@@ -198,7 +198,7 @@ Partial Class frmResultBaseDesign
         Me.cmbMedtech.FormattingEnabled = True
         Me.cmbMedtech.Location = New System.Drawing.Point(4, 43)
         Me.cmbMedtech.Name = "cmbMedtech"
-        Me.cmbMedtech.Size = New System.Drawing.Size(234, 26)
+        Me.cmbMedtech.Size = New System.Drawing.Size(243, 26)
         Me.cmbMedtech.TabIndex = 222
         '
         'lblpatientid
@@ -291,8 +291,8 @@ Partial Class frmResultBaseDesign
         'panelmain
         '
         Me.panelmain.Controls.Add(Me.panelsignatory)
-        Me.panelmain.Controls.Add(Me.panelresult)
         Me.panelmain.Controls.Add(Me.panelresultgrid)
+        Me.panelmain.Controls.Add(Me.panelresult)
         Me.panelmain.Location = New System.Drawing.Point(20, 0)
         Me.panelmain.Name = "panelmain"
         Me.panelmain.Size = New System.Drawing.Size(750, 233)
@@ -302,7 +302,7 @@ Partial Class frmResultBaseDesign
         '
         Me.panelsignatory.Controls.Add(Me.tblpanelsignatory)
         Me.panelsignatory.Dock = System.Windows.Forms.DockStyle.Top
-        Me.panelsignatory.Location = New System.Drawing.Point(0, 237)
+        Me.panelsignatory.Location = New System.Drawing.Point(0, 242)
         Me.panelsignatory.Name = "panelsignatory"
         Me.panelsignatory.Size = New System.Drawing.Size(750, 110)
         Me.panelsignatory.TabIndex = 253
@@ -310,9 +310,9 @@ Partial Class frmResultBaseDesign
         'tblpanelsignatory
         '
         Me.tblpanelsignatory.ColumnCount = 3
-        Me.tblpanelsignatory.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.0!))
-        Me.tblpanelsignatory.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.0!))
-        Me.tblpanelsignatory.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.0!))
+        Me.tblpanelsignatory.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.26667!))
+        Me.tblpanelsignatory.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.26667!))
+        Me.tblpanelsignatory.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.6!))
         Me.tblpanelsignatory.Controls.Add(Me.Panel4, 1, 0)
         Me.tblpanelsignatory.Controls.Add(Me.Panel2, 0, 0)
         Me.tblpanelsignatory.Controls.Add(Me.Panel3, 2, 0)
@@ -332,9 +332,9 @@ Partial Class frmResultBaseDesign
         Me.Panel4.Controls.Add(Me.lblverifiedbylicense)
         Me.Panel4.Controls.Add(Me.lblverifiedbydesignation)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel4.Location = New System.Drawing.Point(250, 3)
+        Me.Panel4.Location = New System.Drawing.Point(259, 3)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(241, 104)
+        Me.Panel4.Size = New System.Drawing.Size(250, 104)
         Me.Panel4.TabIndex = 278
         '
         'Label13
@@ -361,7 +361,7 @@ Partial Class frmResultBaseDesign
         Me.cmbverifiedby.FormattingEnabled = True
         Me.cmbverifiedby.Location = New System.Drawing.Point(4, 43)
         Me.cmbverifiedby.Name = "cmbverifiedby"
-        Me.cmbverifiedby.Size = New System.Drawing.Size(234, 26)
+        Me.cmbverifiedby.Size = New System.Drawing.Size(243, 26)
         Me.cmbverifiedby.TabIndex = 222
         '
         'panelverifiedby
@@ -372,7 +372,7 @@ Partial Class frmResultBaseDesign
         Me.panelverifiedby.Controls.Add(Me.lblverifiedby)
         Me.panelverifiedby.Location = New System.Drawing.Point(3, 18)
         Me.panelverifiedby.Name = "panelverifiedby"
-        Me.panelverifiedby.Size = New System.Drawing.Size(238, 54)
+        Me.panelverifiedby.Size = New System.Drawing.Size(247, 54)
         Me.panelverifiedby.TabIndex = 275
         '
         'chkesigverifiedby
@@ -380,7 +380,7 @@ Partial Class frmResultBaseDesign
         Me.chkesigverifiedby.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.chkesigverifiedby.AutoSize = True
         Me.chkesigverifiedby.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chkesigverifiedby.Location = New System.Drawing.Point(183, 9)
+        Me.chkesigverifiedby.Location = New System.Drawing.Point(192, 9)
         Me.chkesigverifiedby.Name = "chkesigverifiedby"
         Me.chkesigverifiedby.Size = New System.Drawing.Size(52, 18)
         Me.chkesigverifiedby.TabIndex = 274
@@ -396,7 +396,7 @@ Partial Class frmResultBaseDesign
         Me.lblverifiedby.ForeColor = System.Drawing.Color.Black
         Me.lblverifiedby.Location = New System.Drawing.Point(-3, 31)
         Me.lblverifiedby.Name = "lblverifiedby"
-        Me.lblverifiedby.Size = New System.Drawing.Size(241, 19)
+        Me.lblverifiedby.Size = New System.Drawing.Size(250, 19)
         Me.lblverifiedby.TabIndex = 273
         Me.lblverifiedby.Text = "Medtech Name"
         Me.lblverifiedby.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -410,7 +410,7 @@ Partial Class frmResultBaseDesign
         Me.lblverifiedbylicense.ForeColor = System.Drawing.Color.Black
         Me.lblverifiedbylicense.Location = New System.Drawing.Point(6, 67)
         Me.lblverifiedbylicense.Name = "lblverifiedbylicense"
-        Me.lblverifiedbylicense.Size = New System.Drawing.Size(235, 18)
+        Me.lblverifiedbylicense.Size = New System.Drawing.Size(244, 18)
         Me.lblverifiedbylicense.TabIndex = 253
         Me.lblverifiedbylicense.Text = "License No."
         Me.lblverifiedbylicense.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -423,7 +423,7 @@ Partial Class frmResultBaseDesign
         Me.lblverifiedbydesignation.ForeColor = System.Drawing.Color.Black
         Me.lblverifiedbydesignation.Location = New System.Drawing.Point(7, 82)
         Me.lblverifiedbydesignation.Name = "lblverifiedbydesignation"
-        Me.lblverifiedbydesignation.Size = New System.Drawing.Size(232, 27)
+        Me.lblverifiedbydesignation.Size = New System.Drawing.Size(241, 27)
         Me.lblverifiedbydesignation.TabIndex = 252
         Me.lblverifiedbydesignation.Text = "Medical Technologist"
         Me.lblverifiedbydesignation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -438,7 +438,7 @@ Partial Class frmResultBaseDesign
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel2.Location = New System.Drawing.Point(3, 3)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(241, 104)
+        Me.Panel2.Size = New System.Drawing.Size(250, 104)
         Me.Panel2.TabIndex = 276
         '
         'Label12
@@ -464,7 +464,7 @@ Partial Class frmResultBaseDesign
         Me.panelmedtech.Controls.Add(Me.lblmedtech)
         Me.panelmedtech.Location = New System.Drawing.Point(3, 18)
         Me.panelmedtech.Name = "panelmedtech"
-        Me.panelmedtech.Size = New System.Drawing.Size(238, 54)
+        Me.panelmedtech.Size = New System.Drawing.Size(247, 54)
         Me.panelmedtech.TabIndex = 275
         '
         'chkesigmedtech
@@ -472,7 +472,7 @@ Partial Class frmResultBaseDesign
         Me.chkesigmedtech.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.chkesigmedtech.AutoSize = True
         Me.chkesigmedtech.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chkesigmedtech.Location = New System.Drawing.Point(183, 9)
+        Me.chkesigmedtech.Location = New System.Drawing.Point(192, 9)
         Me.chkesigmedtech.Name = "chkesigmedtech"
         Me.chkesigmedtech.Size = New System.Drawing.Size(52, 18)
         Me.chkesigmedtech.TabIndex = 274
@@ -488,7 +488,7 @@ Partial Class frmResultBaseDesign
         Me.lblmedtech.ForeColor = System.Drawing.Color.Black
         Me.lblmedtech.Location = New System.Drawing.Point(-3, 31)
         Me.lblmedtech.Name = "lblmedtech"
-        Me.lblmedtech.Size = New System.Drawing.Size(244, 19)
+        Me.lblmedtech.Size = New System.Drawing.Size(253, 19)
         Me.lblmedtech.TabIndex = 273
         Me.lblmedtech.Text = "Medtech Name"
         Me.lblmedtech.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -502,7 +502,7 @@ Partial Class frmResultBaseDesign
         Me.lblmedtechlicense.ForeColor = System.Drawing.Color.Black
         Me.lblmedtechlicense.Location = New System.Drawing.Point(6, 67)
         Me.lblmedtechlicense.Name = "lblmedtechlicense"
-        Me.lblmedtechlicense.Size = New System.Drawing.Size(235, 18)
+        Me.lblmedtechlicense.Size = New System.Drawing.Size(244, 18)
         Me.lblmedtechlicense.TabIndex = 253
         Me.lblmedtechlicense.Text = "License No."
         Me.lblmedtechlicense.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -515,7 +515,7 @@ Partial Class frmResultBaseDesign
         Me.lblmedtechdesignation.ForeColor = System.Drawing.Color.Black
         Me.lblmedtechdesignation.Location = New System.Drawing.Point(7, 82)
         Me.lblmedtechdesignation.Name = "lblmedtechdesignation"
-        Me.lblmedtechdesignation.Size = New System.Drawing.Size(232, 27)
+        Me.lblmedtechdesignation.Size = New System.Drawing.Size(241, 27)
         Me.lblmedtechdesignation.TabIndex = 252
         Me.lblmedtechdesignation.Text = "Medical Technologist"
         Me.lblmedtechdesignation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -527,9 +527,9 @@ Partial Class frmResultBaseDesign
         Me.Panel3.Controls.Add(Me.lblpatholicense)
         Me.Panel3.Controls.Add(Me.panelpatho)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel3.Location = New System.Drawing.Point(497, 3)
+        Me.Panel3.Location = New System.Drawing.Point(515, 3)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(250, 104)
+        Me.Panel3.Size = New System.Drawing.Size(232, 104)
         Me.Panel3.TabIndex = 277
         '
         'lblpathodesignation
@@ -540,7 +540,7 @@ Partial Class frmResultBaseDesign
         Me.lblpathodesignation.ForeColor = System.Drawing.Color.Black
         Me.lblpathodesignation.Location = New System.Drawing.Point(3, 82)
         Me.lblpathodesignation.Name = "lblpathodesignation"
-        Me.lblpathodesignation.Size = New System.Drawing.Size(249, 27)
+        Me.lblpathodesignation.Size = New System.Drawing.Size(231, 27)
         Me.lblpathodesignation.TabIndex = 255
         Me.lblpathodesignation.Text = "Clinical Pathologist"
         Me.lblpathodesignation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -554,7 +554,7 @@ Partial Class frmResultBaseDesign
         Me.cmbPathologist.FormattingEnabled = True
         Me.cmbPathologist.Location = New System.Drawing.Point(4, 43)
         Me.cmbPathologist.Name = "cmbPathologist"
-        Me.cmbPathologist.Size = New System.Drawing.Size(243, 26)
+        Me.cmbPathologist.Size = New System.Drawing.Size(225, 26)
         Me.cmbPathologist.TabIndex = 257
         '
         'lblpatholicense
@@ -565,7 +565,7 @@ Partial Class frmResultBaseDesign
         Me.lblpatholicense.ForeColor = System.Drawing.Color.Black
         Me.lblpatholicense.Location = New System.Drawing.Point(6, 67)
         Me.lblpatholicense.Name = "lblpatholicense"
-        Me.lblpatholicense.Size = New System.Drawing.Size(242, 18)
+        Me.lblpatholicense.Size = New System.Drawing.Size(224, 18)
         Me.lblpatholicense.TabIndex = 256
         Me.lblpatholicense.Text = "License No."
         Me.lblpatholicense.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -578,7 +578,7 @@ Partial Class frmResultBaseDesign
         Me.panelpatho.Controls.Add(Me.lblpatho)
         Me.panelpatho.Location = New System.Drawing.Point(3, 18)
         Me.panelpatho.Name = "panelpatho"
-        Me.panelpatho.Size = New System.Drawing.Size(246, 54)
+        Me.panelpatho.Size = New System.Drawing.Size(228, 54)
         Me.panelpatho.TabIndex = 274
         '
         'chkesigpatho
@@ -586,7 +586,7 @@ Partial Class frmResultBaseDesign
         Me.chkesigpatho.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.chkesigpatho.AutoSize = True
         Me.chkesigpatho.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chkesigpatho.Location = New System.Drawing.Point(196, 9)
+        Me.chkesigpatho.Location = New System.Drawing.Point(178, 9)
         Me.chkesigpatho.Name = "chkesigpatho"
         Me.chkesigpatho.Size = New System.Drawing.Size(52, 18)
         Me.chkesigpatho.TabIndex = 275
@@ -602,23 +602,15 @@ Partial Class frmResultBaseDesign
         Me.lblpatho.ForeColor = System.Drawing.Color.Black
         Me.lblpatho.Location = New System.Drawing.Point(-3, 31)
         Me.lblpatho.Name = "lblpatho"
-        Me.lblpatho.Size = New System.Drawing.Size(251, 19)
+        Me.lblpatho.Size = New System.Drawing.Size(233, 19)
         Me.lblpatho.TabIndex = 273
         Me.lblpatho.Text = "Pathologist Name"
         Me.lblpatho.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.lblpatho.Visible = False
         '
-        'panelresult
-        '
-        Me.panelresult.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.panelresult.Dock = System.Windows.Forms.DockStyle.Top
-        Me.panelresult.Location = New System.Drawing.Point(0, 120)
-        Me.panelresult.Name = "panelresult"
-        Me.panelresult.Size = New System.Drawing.Size(750, 117)
-        Me.panelresult.TabIndex = 252
-        '
         'panelresultgrid
         '
+        Me.panelresultgrid.AutoSize = True
         Me.panelresultgrid.BackColor = System.Drawing.Color.White
         Me.panelresultgrid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.panelresultgrid.Controls.Add(Me.Panel1)
@@ -626,19 +618,20 @@ Partial Class frmResultBaseDesign
         Me.panelresultgrid.Controls.Add(Me.panelresultwithconversion)
         Me.panelresultgrid.Controls.Add(Me.panelmanageparams)
         Me.panelresultgrid.Dock = System.Windows.Forms.DockStyle.Top
-        Me.panelresultgrid.Location = New System.Drawing.Point(0, 0)
+        Me.panelresultgrid.Location = New System.Drawing.Point(0, 117)
         Me.panelresultgrid.Name = "panelresultgrid"
-        Me.panelresultgrid.Size = New System.Drawing.Size(750, 120)
+        Me.panelresultgrid.Size = New System.Drawing.Size(750, 125)
         Me.panelresultgrid.TabIndex = 253
         '
         'Panel1
         '
+        Me.Panel1.AutoSize = True
         Me.Panel1.Controls.Add(Me.txtgridremarks)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 123)
+        Me.Panel1.Location = New System.Drawing.Point(0, 83)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(748, 41)
+        Me.Panel1.Size = New System.Drawing.Size(748, 40)
         Me.Panel1.TabIndex = 257
         '
         'txtgridremarks
@@ -670,27 +663,27 @@ Partial Class frmResultBaseDesign
         Me.dgvResult.AllowUserToResizeRows = False
         Me.dgvResult.BackgroundColor = System.Drawing.Color.White
         Me.dgvResult.BorderStyle = System.Windows.Forms.BorderStyle.None
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvResult.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle113.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle113.BackColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle113.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle113.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle113.SelectionBackColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle113.SelectionForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle113.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvResult.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle113
         Me.dgvResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvResult.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colparameter, Me.colresult, Me.colunits, Me.colref, Me.collabdetailid, Me.collabresultdetailid, Me.coltexthighlight, Me.colresultconversion, Me.colunitsconversion, Me.colrefconversion, Me.colconversion})
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle9.Font = New System.Drawing.Font("Cambria", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvResult.DefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle121.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle121.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle121.Font = New System.Drawing.Font("Cambria", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle121.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle121.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle121.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle121.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvResult.DefaultCellStyle = DataGridViewCellStyle121
         Me.dgvResult.Dock = System.Windows.Forms.DockStyle.Top
         Me.dgvResult.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter
-        Me.dgvResult.Location = New System.Drawing.Point(0, 72)
+        Me.dgvResult.Location = New System.Drawing.Point(0, 32)
         Me.dgvResult.Name = "dgvResult"
         Me.dgvResult.RowHeadersVisible = False
         Me.dgvResult.RowTemplate.Height = 20
@@ -700,11 +693,11 @@ Partial Class frmResultBaseDesign
         'colparameter
         '
         Me.colparameter.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.WindowText
-        Me.colparameter.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle114.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle114.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle114.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle114.SelectionForeColor = System.Drawing.SystemColors.WindowText
+        Me.colparameter.DefaultCellStyle = DataGridViewCellStyle114
         Me.colparameter.HeaderText = "Parameter"
         Me.colparameter.Name = "colparameter"
         Me.colparameter.ReadOnly = True
@@ -713,12 +706,12 @@ Partial Class frmResultBaseDesign
         'colresult
         '
         Me.colresult.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.WindowText
-        Me.colresult.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle115.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle115.BackColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle115.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle115.SelectionBackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle115.SelectionForeColor = System.Drawing.SystemColors.WindowText
+        Me.colresult.DefaultCellStyle = DataGridViewCellStyle115
         Me.colresult.HeaderText = "Result"
         Me.colresult.Name = "colresult"
         Me.colresult.Width = 72
@@ -726,12 +719,12 @@ Partial Class frmResultBaseDesign
         'colunits
         '
         Me.colunits.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.WindowText
-        Me.colunits.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle116.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle116.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle116.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle116.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle116.SelectionForeColor = System.Drawing.SystemColors.WindowText
+        Me.colunits.DefaultCellStyle = DataGridViewCellStyle116
         Me.colunits.HeaderText = "Units"
         Me.colunits.Name = "colunits"
         Me.colunits.ReadOnly = True
@@ -740,12 +733,12 @@ Partial Class frmResultBaseDesign
         'colref
         '
         Me.colref.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.WindowText
-        Me.colref.DefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle117.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle117.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle117.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle117.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle117.SelectionForeColor = System.Drawing.SystemColors.WindowText
+        Me.colref.DefaultCellStyle = DataGridViewCellStyle117
         Me.colref.HeaderText = "Reference  Range"
         Me.colref.Name = "colref"
         Me.colref.ReadOnly = True
@@ -772,12 +765,12 @@ Partial Class frmResultBaseDesign
         'colresultconversion
         '
         Me.colresultconversion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.WindowText
-        Me.colresultconversion.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle118.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle118.BackColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle118.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle118.SelectionBackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle118.SelectionForeColor = System.Drawing.SystemColors.WindowText
+        Me.colresultconversion.DefaultCellStyle = DataGridViewCellStyle118
         Me.colresultconversion.HeaderText = "colresultconversion"
         Me.colresultconversion.Name = "colresultconversion"
         Me.colresultconversion.Width = 72
@@ -785,12 +778,12 @@ Partial Class frmResultBaseDesign
         'colunitsconversion
         '
         Me.colunitsconversion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.WindowText
-        Me.colunitsconversion.DefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle119.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle119.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle119.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle119.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle119.SelectionForeColor = System.Drawing.SystemColors.WindowText
+        Me.colunitsconversion.DefaultCellStyle = DataGridViewCellStyle119
         Me.colunitsconversion.HeaderText = "colunitsconversion"
         Me.colunitsconversion.Name = "colunitsconversion"
         Me.colunitsconversion.ReadOnly = True
@@ -799,12 +792,12 @@ Partial Class frmResultBaseDesign
         'colrefconversion
         '
         Me.colrefconversion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle8.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.WindowText
-        Me.colrefconversion.DefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle120.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle120.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle120.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle120.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle120.SelectionForeColor = System.Drawing.SystemColors.WindowText
+        Me.colrefconversion.DefaultCellStyle = DataGridViewCellStyle120
         Me.colrefconversion.HeaderText = "colrefconversion"
         Me.colrefconversion.Name = "colrefconversion"
         Me.colrefconversion.ReadOnly = True
@@ -828,7 +821,7 @@ Partial Class frmResultBaseDesign
         Me.panelresultwithconversion.Dock = System.Windows.Forms.DockStyle.Top
         Me.panelresultwithconversion.Location = New System.Drawing.Point(0, 27)
         Me.panelresultwithconversion.Name = "panelresultwithconversion"
-        Me.panelresultwithconversion.Size = New System.Drawing.Size(748, 45)
+        Me.panelresultwithconversion.Size = New System.Drawing.Size(748, 5)
         Me.panelresultwithconversion.TabIndex = 258
         '
         'Label14
@@ -942,6 +935,15 @@ Partial Class frmResultBaseDesign
         Me.btnEdit.TabIndex = 230
         Me.btnEdit.Text = "Manage Parameters"
         Me.btnEdit.UseVisualStyleBackColor = False
+        '
+        'panelresult
+        '
+        Me.panelresult.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.panelresult.Dock = System.Windows.Forms.DockStyle.Top
+        Me.panelresult.Location = New System.Drawing.Point(0, 0)
+        Me.panelresult.Name = "panelresult"
+        Me.panelresult.Size = New System.Drawing.Size(750, 117)
+        Me.panelresult.TabIndex = 252
         '
         'ShapeContainer1
         '
@@ -1386,124 +1388,6 @@ Partial Class frmResultBaseDesign
         Me.paneltimeinfo.Size = New System.Drawing.Size(160, 90)
         Me.paneltimeinfo.TabIndex = 283
         '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        DataGridViewCellStyle10.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.WindowText
-        Me.DataGridViewTextBoxColumn1.DefaultCellStyle = DataGridViewCellStyle10
-        Me.DataGridViewTextBoxColumn1.HeaderText = "Parameter"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        DataGridViewCellStyle11.BackColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.WindowText
-        Me.DataGridViewTextBoxColumn2.DefaultCellStyle = DataGridViewCellStyle11
-        Me.DataGridViewTextBoxColumn2.HeaderText = "Result"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.Width = 160
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle12.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.WindowText
-        Me.DataGridViewTextBoxColumn3.DefaultCellStyle = DataGridViewCellStyle12
-        Me.DataGridViewTextBoxColumn3.HeaderText = "Units"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.ReadOnly = True
-        Me.DataGridViewTextBoxColumn3.Width = 72
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle13.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.WindowText
-        Me.DataGridViewTextBoxColumn4.DefaultCellStyle = DataGridViewCellStyle13
-        Me.DataGridViewTextBoxColumn4.HeaderText = "Reference  Range"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        Me.DataGridViewTextBoxColumn4.ReadOnly = True
-        Me.DataGridViewTextBoxColumn4.Width = 190
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.HeaderText = "collabdetailid"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        Me.DataGridViewTextBoxColumn5.Visible = False
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.HeaderText = "collabresultdetailid"
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        Me.DataGridViewTextBoxColumn6.Visible = False
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.HeaderText = "coltexthighlight"
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        Me.DataGridViewTextBoxColumn7.Visible = False
-        '
-        'DataGridViewTextBoxColumn8
-        '
-        Me.DataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle14.BackColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.WindowText
-        Me.DataGridViewTextBoxColumn8.DefaultCellStyle = DataGridViewCellStyle14
-        Me.DataGridViewTextBoxColumn8.HeaderText = "colresultconversion"
-        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        Me.DataGridViewTextBoxColumn8.Width = 72
-        '
-        'DataGridViewTextBoxColumn9
-        '
-        Me.DataGridViewTextBoxColumn9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle15.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.WindowText
-        Me.DataGridViewTextBoxColumn9.DefaultCellStyle = DataGridViewCellStyle15
-        Me.DataGridViewTextBoxColumn9.HeaderText = "colunitsconversion"
-        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
-        Me.DataGridViewTextBoxColumn9.ReadOnly = True
-        Me.DataGridViewTextBoxColumn9.Width = 72
-        '
-        'DataGridViewTextBoxColumn10
-        '
-        Me.DataGridViewTextBoxColumn10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle16.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.WindowText
-        Me.DataGridViewTextBoxColumn10.DefaultCellStyle = DataGridViewCellStyle16
-        Me.DataGridViewTextBoxColumn10.HeaderText = "colrefconversion"
-        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
-        Me.DataGridViewTextBoxColumn10.ReadOnly = True
-        Me.DataGridViewTextBoxColumn10.Width = 131
-        '
-        'DataGridViewTextBoxColumn11
-        '
-        Me.DataGridViewTextBoxColumn11.HeaderText = "colconversion"
-        Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
-        Me.DataGridViewTextBoxColumn11.ReadOnly = True
-        Me.DataGridViewTextBoxColumn11.Visible = False
-        '
         'panelheader
         '
         Me.panelheader.Controls.Add(Me.Label10)
@@ -1541,7 +1425,7 @@ Partial Class frmResultBaseDesign
         Me.panelbody.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panelbody.Location = New System.Drawing.Point(0, 226)
         Me.panelbody.Name = "panelbody"
-        Me.panelbody.Size = New System.Drawing.Size(789, 180)
+        Me.panelbody.Size = New System.Drawing.Size(789, 190)
         Me.panelbody.TabIndex = 285
         '
         'paneltopmargin
@@ -1553,11 +1437,130 @@ Partial Class frmResultBaseDesign
         Me.paneltopmargin.TabIndex = 286
         Me.paneltopmargin.Visible = False
         '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        DataGridViewCellStyle122.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle122.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle122.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle122.SelectionForeColor = System.Drawing.SystemColors.WindowText
+        Me.DataGridViewTextBoxColumn1.DefaultCellStyle = DataGridViewCellStyle122
+        Me.DataGridViewTextBoxColumn1.HeaderText = "Parameter"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        DataGridViewCellStyle123.BackColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle123.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle123.SelectionBackColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle123.SelectionForeColor = System.Drawing.SystemColors.WindowText
+        Me.DataGridViewTextBoxColumn2.DefaultCellStyle = DataGridViewCellStyle123
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Result"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.Width = 160
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        DataGridViewCellStyle124.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle124.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle124.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle124.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle124.SelectionForeColor = System.Drawing.SystemColors.WindowText
+        Me.DataGridViewTextBoxColumn3.DefaultCellStyle = DataGridViewCellStyle124
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Units"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.ReadOnly = True
+        Me.DataGridViewTextBoxColumn3.Width = 72
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        DataGridViewCellStyle125.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle125.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle125.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle125.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle125.SelectionForeColor = System.Drawing.SystemColors.WindowText
+        Me.DataGridViewTextBoxColumn4.DefaultCellStyle = DataGridViewCellStyle125
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Reference  Range"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.ReadOnly = True
+        Me.DataGridViewTextBoxColumn4.Width = 190
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.HeaderText = "collabdetailid"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.Visible = False
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.HeaderText = "collabresultdetailid"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.Visible = False
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.HeaderText = "coltexthighlight"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        Me.DataGridViewTextBoxColumn7.Visible = False
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        Me.DataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        DataGridViewCellStyle126.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle126.BackColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle126.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle126.SelectionBackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle126.SelectionForeColor = System.Drawing.SystemColors.WindowText
+        Me.DataGridViewTextBoxColumn8.DefaultCellStyle = DataGridViewCellStyle126
+        Me.DataGridViewTextBoxColumn8.HeaderText = "colresultconversion"
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        Me.DataGridViewTextBoxColumn8.Width = 72
+        '
+        'DataGridViewTextBoxColumn9
+        '
+        Me.DataGridViewTextBoxColumn9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        DataGridViewCellStyle127.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle127.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle127.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle127.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle127.SelectionForeColor = System.Drawing.SystemColors.WindowText
+        Me.DataGridViewTextBoxColumn9.DefaultCellStyle = DataGridViewCellStyle127
+        Me.DataGridViewTextBoxColumn9.HeaderText = "colunitsconversion"
+        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
+        Me.DataGridViewTextBoxColumn9.ReadOnly = True
+        Me.DataGridViewTextBoxColumn9.Width = 72
+        '
+        'DataGridViewTextBoxColumn10
+        '
+        Me.DataGridViewTextBoxColumn10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        DataGridViewCellStyle128.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle128.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle128.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle128.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle128.SelectionForeColor = System.Drawing.SystemColors.WindowText
+        Me.DataGridViewTextBoxColumn10.DefaultCellStyle = DataGridViewCellStyle128
+        Me.DataGridViewTextBoxColumn10.HeaderText = "colrefconversion"
+        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
+        Me.DataGridViewTextBoxColumn10.ReadOnly = True
+        Me.DataGridViewTextBoxColumn10.Width = 131
+        '
+        'DataGridViewTextBoxColumn11
+        '
+        Me.DataGridViewTextBoxColumn11.HeaderText = "colconversion"
+        Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
+        Me.DataGridViewTextBoxColumn11.ReadOnly = True
+        Me.DataGridViewTextBoxColumn11.Visible = False
+        '
         'frmResultBaseDesign
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
+        Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(789, 406)
+        Me.ClientSize = New System.Drawing.Size(789, 416)
         Me.ControlBox = False
         Me.Controls.Add(Me.panelbody)
         Me.Controls.Add(Me.panelnewborn)
@@ -1567,9 +1570,11 @@ Partial Class frmResultBaseDesign
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmResultBaseDesign"
+        Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TEST"
         Me.panelmain.ResumeLayout(False)
+        Me.panelmain.PerformLayout()
         Me.panelsignatory.ResumeLayout(False)
         Me.tblpanelsignatory.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
@@ -1584,6 +1589,7 @@ Partial Class frmResultBaseDesign
         Me.panelpatho.ResumeLayout(False)
         Me.panelpatho.PerformLayout()
         Me.panelresultgrid.ResumeLayout(False)
+        Me.panelresultgrid.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.dgvResult, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1619,8 +1625,7 @@ Partial Class frmResultBaseDesign
     Public Sub New()
 
         ' This call is required by the designer.
-        InitializeComponent()
-
+        InitializeComponent() 
         ' Add any initialization after the InitializeComponent() call.
 
     End Sub

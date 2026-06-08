@@ -12,7 +12,7 @@ Public Class frmDashboard
     End Enum
     Enum enModule
         diagnostics = 0
-        examinationschema = 1
+        examinationschema = 1 
     End Enum
 #End Region
     Private Sub frmDashboard_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
@@ -209,6 +209,7 @@ Public Class frmDashboard
                 frmDesigner = New frmResultDesigner(frmResultDesigner.formaction.manageResult, dgMain.SelectedRows(0).Cells("prdno").Value, 0, dt.Rows(0)(0))
                 frmDesigner.ShowDialog()
                 displayList()
+            
         End Select
     End Sub
 

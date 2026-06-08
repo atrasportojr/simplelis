@@ -10,11 +10,11 @@ Public Class frmResultDesigner
     Private laboratoryname As String
     Private laboratoryttitle As String
     Private testofficecode As String
-
-
+     
     Private fbaseform As frmResultBaseDesign
     Private fBloodChem As frmtemplatewithconversion
     Private frmRadiology As frmtemplateRTF
+    Private fcrossmatch As frmCrossmatching
 
     Private afterload As Boolean
     Private initpanelresultheight As Integer
@@ -91,6 +91,10 @@ Public Class frmResultDesigner
                     frmRadiology.MdiParent = Me
                     frmRadiology.Dock = DockStyle.Fill
                     frmRadiology.Show()
+                Case LabFormat.CROSSMATCHING
+                    fcrossmatch = New frmCrossmatching(Me, False, Me.laboratoryid, Me.laboratoryttitle, Me.myFormaction <> formaction.manageResult, Me.labformatid)
+                    fcrossmatch.loadRequestDetails(Me.requestdetailno)
+                    loadFormCM()
                 Case Else
                     fbaseform = New frmResultBaseDesign(Me, False, Me.laboratoryid, Me.laboratoryttitle, Me.myFormaction <> formaction.manageResult, Me.labformatid)
                     fbaseform.loadRequestDetails(Me.requestdetailno)
@@ -175,11 +179,22 @@ getLabDetails:
         Call loadDesign()
         recenterForm()
     End Sub
+    Private Sub loadformcm()
+        Dim islock As Boolean
+        fcrossmatch.MdiParent = Me
+        If Not myFormaction = formaction.manageResult Then
+            islock = True
+            Me.fcrossmatch.isLock = True
+        End If
+        fcrossmatch.Show()
+       
+    End Sub
     Private Sub adjustPanelSize()
         If CInt(Me.txtpanelheight.Text) >= 100 Then
             Me.fbaseform.panelresult.Height = CInt(Me.txtpanelheight.Text)
             Me.fbaseform.panelmain.Height = Me.initpanelmainheight + (CInt(Me.txtpanelheight.Text) - Me.initpanelresultheight)
-            Me.fbaseform.Height = Me.initformheight + (CInt(Me.txtpanelheight.Text) - Me.initpanelresultheight)
+            'Me.fbaseform.Height = Me.initformheight + (CInt(Me.txtpanelheight.Text) - Me.initpanelresultheight)
+            Me.fbaseform.Height = 1080
             Call recenterForm()
         Else
             Me.txtpanelheight.Text = Me.initpanelresultheight
@@ -294,7 +309,7 @@ getLabDetails:
                 Next
             End If
             If islock Then
-                fbaseform.lock()
+                fbaseform.lock() 
             End If
         End If
     End Sub
@@ -369,6 +384,12 @@ getLabDetails:
                             Exit Sub
                         End If
                         frmRadiology.lock()
+                    Case LabFormat.CROSSMATCHING        'jay
+                        fcrossmatch.saveNow(Me.tsSave.Text)
+                        If Not fcrossmatch.isSave Then
+                            Exit Sub
+                        End If
+                        fcrossmatch.lock()
                     Case Else
                         If fbaseform.cmbMedtech.SelectedIndex = -1 Or fbaseform.cmbPathologist.SelectedIndex = -1 Then
                             MsgBox("Medical Tehnologist and Pathologist are required!", MsgBoxStyle.Critical, msgboxTitle)
@@ -637,6 +658,8 @@ getLabDetails:
         Select Case Me.labformatid
             Case LabFormat.RADIOLOGY, LabFormat.ULTRASOUND, LabFormat.ECGREPORT, LabFormat.EchoForms
                 frmRadiology.DisplayPrintPreview()
+            Case LabFormat.CROSSMATCHING
+                Me.fcrossmatch.PrintPreview()
             Case Else
                 If Me.labformatid = LabFormat.GENERIC Then
                     For Each field As clsModel.LabControl In Me.lstControls

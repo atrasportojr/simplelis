@@ -138,6 +138,12 @@
     <Compile Include="Data Access\clsQuery.vb" />
     <Compile Include="Data Access\GenericDA.vb" />
     <Compile Include="Enum\LabFormat.vb" />
+    <Compile Include="Forms\frmCrossmatching.Designer.vb">
+      <DependentUpon>frmCrossmatching.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCrossmatching.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\frmCustomDialog.Designer.vb">
       <DependentUpon>frmCustomDialog.vb</DependentUpon>
     </Compile>
@@ -284,8 +290,17 @@
     <Compile Include="Reports\frmReportHandler.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reports\laboratory reports\crptcrossmatch.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crptcrossmatch.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\frmCrossmatching.resx">
+      <DependentUpon>frmCrossmatching.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmCustomDialog.resx">
       <DependentUpon>frmCustomDialog.vb</DependentUpon>
     </EmbeddedResource>
@@ -359,9 +374,14 @@
     <EmbeddedResource Include="Reports\frmReportHandler.resx">
       <DependentUpon>frmReportHandler.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\laboratory reports\crptcrossmatch.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crptcrossmatch.vb</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="lis.settings.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

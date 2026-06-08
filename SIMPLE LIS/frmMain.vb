@@ -44,8 +44,8 @@ Public Class frmMain
             .Password = Utility.Decrypt(ConfigurationManager.AppSettings("gPassword"))
         End With
         laboratoryid = 1
-        requestdetailno = 61014 '1628 maceda '1156 maceda '1569 cabebe '1572 PERPETUA '1575 Martinez '1582 Nobleza
-        employeeid = 2404 '--1081 'ecomed@lab 1031 'ecomed@rad 1011 'lhi@lab 1693 'lhi@rad 1361 'hipol@lab 1081 'lhirad 1361
+        requestdetailno = 1628 ''maceda '1156 maceda '1569 cabebe '1572 PERPETUA '1575 Martinez '1582 Nobleza
+        employeeid = 1693 'ecomed@lab 1031 'ecomed@rad 1011 'lhi@lab 1693 'lhi@rad 1361 'hipol@lab 1081 'lhirad 1361
         myformaction = enformstatus.edit
         target = targetmodule.LISDashboard
         modGlobal.userid = employeeid

@@ -308,7 +308,7 @@ Public Class frmtemplateRTF
             Dim dtResult As DataTable = clsRadiology.getRadiologyResultDetails(requestdetailno, 9)
             If Me.labformatid = LabFormat.EchoForms Then
                 Me.Text = "VASCULAR"
-                Me.chkesig.Visible = False
+                'Me.chkesig.Visible = False jay
             ElseIf Me.laboratoryid = 10 Then
                 Me.Text = "RADIOLOGY"
             Else
@@ -485,7 +485,7 @@ Public Class frmtemplateRTF
             .releasedby = 1
             .datereleased = GetServerDate() '"01/01/1990"
             .pathologist = Me.cmbradiologist.SelectedValue
-            .caseno = Me.txtcaseno.Text
+            .caseno = Utility.NullToZero(Me.txtcaseno.Text)
             If Me.laboratoryresultid = 0 Then
                 .Save(True)
                 Call SaveLog("Radiology", "New Radiology result:" & .patientrequestno, userid)
@@ -597,7 +597,7 @@ Public Class frmtemplateRTF
     End Sub
 #End Region
 #Region "Printing"
-    Public Sub DisplayPrintPreview(Optional tool As Integer = 0)
+    Public Sub DisplayPrintPreview(Optional ByVal tool As Integer = 0)
         'If Me.txtResult.Rtf.Contains("trowd") Then
         If Me.labformatid = LabFormat.EchoForms Then
             processWordDocument("")
@@ -631,9 +631,6 @@ Public Class frmtemplateRTF
 
             End Try
         End If
-        'Else
-
-        'End If
     End Sub
     Public Function generateFileName() As String
         Return Utility.RemoveIllegalFileNameChars(Me.lblexamination.Text, "_") & "_" & requestdetailno
@@ -686,7 +683,7 @@ Public Class frmtemplateRTF
 
         End Try
     End Sub
-    Public Sub processWordDocument(sourceTemplate As String, Optional isEdit As Boolean = False)
+    Public Sub processWordDocument(ByVal sourceTemplate As String, Optional ByVal isEdit As Boolean = False)
         If sourceTemplate <> "" AndAlso File.Exists(resultlocation) Then
             If MsgBox("Do you want to replace existing result?", MsgBoxStyle.YesNo, msgboxTitle) <> MsgBoxResult.Yes Then
                 Exit Sub
